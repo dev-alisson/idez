@@ -17,7 +17,6 @@ class CreateAccountsTable extends Migration
             'accounts',
             function (Blueprint $table) {
                 $table->id();
-                $table->unsignedBigInteger('user_id')->after('id');
                 $table->string('agency');
                 $table->string('number');
                 $table->char('digit');
@@ -27,11 +26,6 @@ class CreateAccountsTable extends Migration
                 $table->string('type');
                 $table->decimal('balance')->default(0);
                 $table->timestamps();
-
-                $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onDelete('cascade');
             }
         );
     }
