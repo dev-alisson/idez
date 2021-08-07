@@ -15,76 +15,76 @@ challenge to compete for a back-end developer position.
 
 #### Commands
 
--- php artisan migrate
+-- php artisan migrate <br/>
 -- php artisan serve
 
 #### - Rroutes
 
 ##### - Users
 
-[GET] /api/users
-[POST] /api/users
-[GET] /api/users/{id}
-[PUT] /api/users/{id}
-[DELETE] /api/users/{id}
+[GET] /api/users <br/>
+[POST] /api/users <br/>
+[GET] /api/users/{id} <br/>
+[PUT] /api/users/{id} <br/>
+[DELETE] /api/users/{id} <br/> <br/>
 
-{
-	"name": "Nome",
-	"lastname": "Sobrenome",
-	"document": "111.222.333-44",
-	"phone": "(11) 22222-3333",
-	"email": "email@gmail.com",
-	"password": "123456"
+{ <br/>
+	"name": "Nome", <br/>
+	"lastname": "Sobrenome", <br/>
+	"document": "111.222.333-44", <br/>
+	"phone": "(11) 22222-3333", <br/>
+	"email": "email@gmail.com", <br/>
+	"password": "123456" <br/>
 }
 
 ##### - Accounts
 
-[GET] /api/accounts
-[POST] /api/accounts
-[GET] /api/accounts/{id}
-[PUT] /api/accounts/{id}
-[DELETE] /api/accounts/{id}
+[GET] /api/accounts <br/>
+[POST] /api/accounts <br/>
+[GET] /api/accounts/{id} <br/>
+[PUT] /api/accounts/{id} <br/>
+[DELETE] /api/accounts/{id} <br/> <br/>
 
-{
-	"user_id": "1",
-	"agency": "1111",
-	"number": "22222",
-	"digit": "3",
-	"cnpj": null,
-	"corporate_name": null,
-	"fantasy_name": null,
-	"type": "person"
-},
-{
-	"user_id": "1",
-	"agency": "1111",
-	"number": "22222",
-	"digit": "3",
-	"cnpj": "11.222.333/4444-55",
-	"corporate_name": "Name Company Corporation LTDA",
-	"fantasy_name": "Company",
-	"type": "company"
+{ <br/>
+	"user_id": "1", <br/>
+	"agency": "1111", <br/>
+	"number": "22222", <br/>
+	"digit": "3", <br/>
+	"cnpj": null, <br/>
+	"corporate_name": null, <br/>
+	"fantasy_name": null, <br/>
+	"type": "person" <br/>
+}, <br/>
+{ <br/>
+	"user_id": "1", <br/>
+	"agency": "1111", <br/>
+	"number": "22222", <br/>
+	"digit": "3", <br/>
+	"cnpj": "11.222.333/4444-55", <br/>
+	"corporate_name": "Name Company Corporation LTDA", <br/>
+	"fantasy_name": "Company", <br/>
+	"type": "company" <br/>
 }
 
 ##### - Deposits
 
-[GET] /api/deposits
-[POST] /api/deposits
-[GET] /api/deposits/{id}
+[GET] /api/deposits <br/>
+[POST] /api/deposits <br/>
+[GET] /api/deposits/{id} <br/> <br/>
 
-{
-	"account_id": "4",
-	"amount": "400"
+{ <br/>
+	"account_id": "4", <br/>
+	"amount": "400" <br/>
 }
 
 ##### - Transfers
 
-[GET] /api/transfers
-[POST] /api/transfers
-[GET] /api/transfers/{id}
+[GET] /api/transfers <br/>
+[POST] /api/transfers <br/>
+[GET] /api/transfers/{id} <br/> <br/>
 
-{
-	"shipping_account_id": "1",
-	"receiving_account_id": "2",
-	"amount": "100"
+{ <br/>
+	"shipping_account_id": "1", <br/>
+	"receiving_account_id": "2", <br/>
+	"amount": "100" <br/>
 }
